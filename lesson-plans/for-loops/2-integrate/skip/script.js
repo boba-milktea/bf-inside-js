@@ -1,11 +1,23 @@
 import { readNumber, readString, display } from '../../../../lib/dom-io.js';
 
-document.getElementById(__).addEventListener('click', () => {
-  debugger;
+document.getElementById('skip-them').addEventListener('click', () => {
+  // debugger;
 
   // read user values
+  const index = readNumber('skip-size');
+  const text = readString('user-text');
 
   // create a new string with skipped characters
+  let result = '';
+
+  if (index && text) {
+    for (let i = 0; i < text.length; i++) {
+      if (i % index === 0) {
+        result += text[i];
+      }
+    }
+  }
 
   // display the skipped string
+  display('skipped-output', result);
 });
