@@ -10,13 +10,17 @@ document.getElementById('skip-them').addEventListener('click', () => {
   // create a new string with skipped characters
   let result = '';
 
-  if (index && text) {
-    for (let i = 0; i < text.length; i++) {
-      if (i % index === 0) {
-        result += text[i];
-      }
-    }
+  for (let i = 0; i < text.length; i += index) {
+    result += text [i]; 
   }
+
+  // if (index && text) {
+  //   for (let i = 0; i < text.length; i++) {
+  //     if (i % index === 0) {
+  //       result += text[i];
+  //     }
+  //   }
+  // }
 
   // display the skipped string
   display('skipped-output', result);

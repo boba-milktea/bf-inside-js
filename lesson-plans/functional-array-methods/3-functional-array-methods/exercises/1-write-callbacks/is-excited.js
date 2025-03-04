@@ -4,4 +4,12 @@
  * @param {string} str - the string
  * @returns {boolean} is it excited?
  */
-export const isExcited = () => {};
+export const isExcited = (str) => {
+  return (str.includes('!')); 
+};
+
+isExcited("hello"); 
+isExcited('hi!'); 
+isExcited("welcome!"); 
+isExcited(" !!!"); 
+isExcited("wonderful")
