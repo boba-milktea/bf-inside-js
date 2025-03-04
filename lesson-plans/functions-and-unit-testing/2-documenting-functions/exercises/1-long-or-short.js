@@ -5,9 +5,9 @@ console.log('-- begin --');
 /**
  * _
  *
- * @_ {_} _ - _
- * @_ {_} _ - _
- * @_ {_} _
+ * @params {string} text - the text to be checked if it's long or short
+ * @params {number} cutoff - the length to decide if it's long or short
+ * @return {string} short, if the text length is less thant the cutoff, long, if it's greater than cutoff
  */
 const longOrShort = (text, cutoff) => {
   if (text.length < cutoff) {
