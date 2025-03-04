@@ -27,6 +27,10 @@ const reverseString = (str) => {
   return backwards;
 };
 
+
+
+console.log(reverseString("abcde")); 
+
 describe('reverseString: reverses any string', () => {
   it('reverses an empty string', () => {
     const actual = reverseString('');
@@ -34,7 +38,7 @@ describe('reverseString: reverses any string', () => {
   });
   it('reverses a string of letters', () => {
     const actual = reverseString('abcde');
-    expect(actual).toEqual('edcba');
+    expect(actual).toEqual('edcba'); 
   });
   it('reverses a string of numbers', () => {
     const actual = reverseString('1337');

@@ -3,8 +3,12 @@
 console.log('-- begin --');
 
 /**
- *
+ * 
+ * @param {string} text the text to be counted 
+ * @param {string} toCount the charactor in the text to be counted 
+ * @returns {number} count - how many toCount charactor do we have in the text
  */
+
 const countCharacter = (text, toCount) => {
   if (toCount.length !== 1) {
     return -1;

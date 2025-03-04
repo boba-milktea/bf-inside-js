@@ -5,8 +5,8 @@ console.log('-- begin --');
 /**
  * _
  *
- * @_ {_} _ - _
- * @_ {_}  _
+ * @params {string} toCheck - the text to be checked if it's palindrome
+ * @return {boolean}  true if it's palindrome, false if it's not. 
  */
 const isPalindrome = (toCheck) => {
   let reversed = '';
