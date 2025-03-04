@@ -4,4 +4,10 @@
  * @param {number} num - the number
  * @returns {boolean} is the number even?
  */
-export const isEven = () => {};
+export const isEven = (num) => {
+  return num % 2 === 0
+};
+
+console.log(isEven(3)); 
+console.log(isEven(4)); 
+console.log(isEven(7)); 
