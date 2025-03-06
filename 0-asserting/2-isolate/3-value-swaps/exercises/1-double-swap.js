@@ -12,6 +12,11 @@ let temp;
 
 // --- swap values ---
 
+temp = a; 
+a = b; 
+temp = b; 
+
+
 // --- test final values ---
 
 const test1 = a === 'x';

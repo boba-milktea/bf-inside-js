@@ -13,6 +13,12 @@ let d = 'x';
 let temp;
 
 // --- swap values ---
+temp = b; 
+a = c; 
+b = d; 
+c = a; 
+d = temp; 
+
 
 // --- test final values ---
 
