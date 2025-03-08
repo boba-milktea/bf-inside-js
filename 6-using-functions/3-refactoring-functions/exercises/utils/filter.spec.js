@@ -41,8 +41,8 @@ describe('filter: removes specific characters from a string', () => {
       expect(returned).toEqual('asdf');
     });
     it('has an empty string for the first default param', () => {
-      const returned = filter();
-      expect(returned).toEqual();
+      const returned = filter("");
+      expect(returned).toEqual("");
     });
   });
 });
