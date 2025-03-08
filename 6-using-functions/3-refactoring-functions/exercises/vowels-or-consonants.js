@@ -39,12 +39,9 @@ const toRemove = removeVowels ? 'aeiou' : 'bcdfghjklmnpqrstvwxyz';
 
 // BEGIN: refactor this to call `filter`
 let filteredInput = '';
-for (const character of userInput) {
-  const lowerCaseCharacter = character.toLowerCase();
-  if (!toRemove.includes(lowerCaseCharacter)) {
-    filteredInput += character;
-  }
-}
+
+filteredInput = filter(userInput, toRemove);
+
 // END: refactor
 
 // use the return value

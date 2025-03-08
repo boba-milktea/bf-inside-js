@@ -10,3 +10,5 @@ export const reverse = (text = '') => {
   }
   return backwards;
 };
+
+console.log(reverse("cooking"))

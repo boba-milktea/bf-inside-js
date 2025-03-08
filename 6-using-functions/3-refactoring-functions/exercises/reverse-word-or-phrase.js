@@ -30,22 +30,19 @@ if (reverseWords) {
   const newWords = [];
   for (const word of splitText) {
     // BEGIN: refactor this to call `reverse`
-    let reversedWord = '';
-    for (let i = 0; i < word.length; i++) {
-      reversedWord = word[i] + reversedWord;
-    }
+    let reversedWord = reverse(word)
     // END: refactor
     newWords.push(reversedWord); // use the return value
   }
   reversed = newWords.join(' ');
 } else {
   // BEGIN: refactor this to call `reverse`
-  let reversedText = '';
-  for (let i = 0; i < original.length; i++) {
-    reversedText = original[i] + reversedText;
-  }
+  let reversedText = reverse(original);
+  // for (let i = 0; i < original.length; i++) {
+  //   reversedText = original[i] + reversedText;
+  // }
   // END: refactor
-  reversed = reversedText; // use the return value
+   reversed = reversedText; // use the return value
 }
 
 alert(`before: ${original}
