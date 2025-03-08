@@ -21,8 +21,8 @@ console.log('-- begin --');
 */
 
 // try different values to see what happens
-const a = _;
-const b = _;
+const a = "12";
+const b = "15";
 
 const realSubtraction = a - b;
 

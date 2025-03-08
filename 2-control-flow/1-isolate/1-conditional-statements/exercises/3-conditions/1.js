@@ -14,7 +14,7 @@ const value1 = 'hello';
 const value2 = false;
 let path = '';
 
-if (_) {
+if ('hello' === false) {
   path = 'if';
 } else {
   path = 'else';

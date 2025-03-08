@@ -14,9 +14,9 @@ const value1 = '';
 const value2 = -1;
 let path = '';
 
-if (_) {
+if ('' || -1) {
   path = 'if';
-} else if (_) {
+} else if ("" != -1) {
   path = 'else if';
 } else {
   path = 'else';
