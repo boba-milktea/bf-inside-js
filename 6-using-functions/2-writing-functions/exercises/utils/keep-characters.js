@@ -8,7 +8,7 @@
 export const keepCharacters = (text = "", toKeep = "") => {
   let newText = ""; 
 
-  for (let char of text) {
+  for (const char of text) {
     toKeep.includes(char) ? newText += char : newText;
   }
   
