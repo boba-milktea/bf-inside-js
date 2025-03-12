@@ -8,6 +8,11 @@ const bReference = b;
 let temp;
 
 // -- swap reference types (write this code) --
+temp = bReference;
+a = temp; 
+b = aReference; 
+
+
 
 // -- assert the references (this is correct) --
 console.assert(a === bReference, 'a references the array with strings');
