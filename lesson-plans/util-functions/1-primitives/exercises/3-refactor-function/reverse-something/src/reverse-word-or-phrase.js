@@ -7,7 +7,7 @@ import {
 import { reverse } from './utils/reverse.js';
 
 const reverseWordOrPhrase = () => {
-  debugger;
+  // debugger;
 
   // --- read user input ---
   const userText = readString('user-text');
@@ -22,11 +22,12 @@ const reverseWordOrPhrase = () => {
     for (const word of splitText) {
       /// BEGIN: refactor this to call `reverse`
       // const reversedWord = reverse(__);
+      const reversedWord = reverse(word); 
 
-      let reversedWord = '';
-      for (const char of word) {
-        reversedWord = char + reversedWord;
-      }
+      // let reversedWord = '';
+      // for (const char of word) {
+      //   reversedWord = char + reversedWord;
+      // }
       /// END: refactor
 
       newWords.push(reversedWord);
@@ -38,9 +39,10 @@ const reverseWordOrPhrase = () => {
     // reversed = reverse(__);
 
     let reversedText = '';
-    for (const char of userText) {
-      reversedText = char + reversedText;
-    }
+    reversedText = reverse(userText); 
+    // for (const char of userText) {
+    //   reversedText = char + reversedText;
+    // }
     reversed = reversedText;
     /// END: refactor
   }
