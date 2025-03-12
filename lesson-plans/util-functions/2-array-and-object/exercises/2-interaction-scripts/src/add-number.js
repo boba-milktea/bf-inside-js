@@ -13,7 +13,7 @@ debugger;
 
 const addNumber = () => {
   // each time the user does this
-  debugger;
+  // debugger;
 
   // --- read user input ---
 

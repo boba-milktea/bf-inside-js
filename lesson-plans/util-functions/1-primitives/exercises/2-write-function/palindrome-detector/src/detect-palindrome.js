@@ -4,7 +4,7 @@ import { replaceClass } from '../../../../../../../lib/dom-classes.js';
 import { isPalindrome } from './utils/is-palindrome.js';
 
 const reverseInput = () => {
-  debugger;
+  // debugger;
 
   // read user's input
   const userText = readString('user-text');
