@@ -13,6 +13,6 @@ for (let i = minutesLeft; i > 0; i--) {
 
 // refactor this for loop to a while loop
 
-while (_) {}
+while () {}
 
 console.log('-- end --');
