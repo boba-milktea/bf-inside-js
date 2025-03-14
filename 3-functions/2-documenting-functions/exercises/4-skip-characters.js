@@ -3,9 +3,11 @@
 'use strict';
 
 console.log('-- begin --');
-
 /**
- *
+ * 
+ * @param {string} [text=""] original text 
+ * @param {number} [toSkip=1] the index of text to skip
+ * @returns new string with the skipped text
  */
 const skipCharacters = (text = '', toSkip = 1) => {
   if (toSkip < 1) {

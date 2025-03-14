@@ -5,12 +5,12 @@
 console.log('-- begin --');
 
 /**
- * _
- *
- * @_ {_} [_=_] - _
- * @_ {_} [_=_] - _
- * @_ {_} _
+ * 
+ * @param {string} [text=""] the input text to be compared
+ * @param {number} [cutoff=0]  the number to compare
+ * @returns string 
  */
+
 const longOrShort = (text = '', cutoff = 0) => {
   if (text.length < cutoff) {
     return 'short';

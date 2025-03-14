@@ -65,14 +65,15 @@ describe('addANumber: adds a given number to each number in an array', () => {
   });
   describe('there are no side-effects', () => {
     it('returns a new array', () => {
-      const actual =  [-2, -1, 0, 1, 2];
-      const result = addANumber([-2, -1, 0, 1, 2], 1);
-      expect(result).toEqual([-1, 0, 1, 2, 3]);
+      const arr =  [-2, -1, 0, 1, 2];
+      const actual = addANumber(arr, 1);
+      const result = arr === actual; 
+      expect(result).toEqual(false);
     });
     it('does not modify the original array', () => {
-       const actual =  [-2, -1, 0, 1, 2];
-      const result = addANumber([-2, -1, 0, 1, 2], 1);
-      expect(actual).toEqual([-2, -1, 0, 1, 2]);
+       const arr =  [-2, -1, 0, 1, 2];
+      addANumber(arr, 1);
+      expect(arr).toEqual([-2, -1, 0, 1, 2]);
     });
   });
 });
