@@ -5,12 +5,6 @@
  * @param {number} [goodLength=0] - The length of string to keep.
  * @returns {string[]} A new array with only strings of `goodLength`.
  */
-export const filterByLength = (strings = [], goodLength = 0) => {
-  const result = [];
-  for (const string of strings) {
-    if (string.length === goodLength) {
-      result.push(string);
-    }
-  }
-  return result;
-};
+export const filterByLength = (strings, goodLength) => {
+    return strings.filter((string) => string.length === goodLength);
+}
