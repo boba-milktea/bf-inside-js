@@ -3,10 +3,12 @@
 'use strict';
 
 console.log('-- begin --');
-
-/**
- *
- */
+ /**
+  * 
+  * @param {string} text, input text to check
+  * @param {string} toCount, the character to count
+  * @returns number, the number of character we have in the text
+  */
 const countCharacter = (text = '', toCount = '') => {
   if (toCount.length !== 1) {
     return -1;

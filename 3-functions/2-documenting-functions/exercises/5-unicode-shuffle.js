@@ -5,7 +5,10 @@
 console.log('-- begin --');
 
 /**
- *
+ * 
+ * @param {string} [text=""] the text to shift with unicode 
+ * @param {number} [shift=0] the number on unicode to shift
+ * @returns string, a string with shifted unicode
  */
 const unicodeShuffle = (text = '', shift = 0) => {
   let encodedString = '';
