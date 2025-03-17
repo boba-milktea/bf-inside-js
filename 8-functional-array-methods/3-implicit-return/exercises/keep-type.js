@@ -4,7 +4,5 @@
  *
  */
 export const keepType = (things = [], type = '') => {
-  return things.filter((thing) => {
-    return typeof thing === type;
-  });
+  return things.filter((thing) => typeof thing === type);
 };

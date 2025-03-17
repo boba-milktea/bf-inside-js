@@ -16,7 +16,7 @@ export const firstNegativeNumber = (arr) => {
   };
 
   // fill in the array method names and callbacks
-  const negativeNumber = arr._(_)._(_);
+  const negativeNumber = arr.filter(isNumber).find(isNegative);
 
   return negativeNumber;
 };

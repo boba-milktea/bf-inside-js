@@ -19,11 +19,21 @@ console.log('-- begin --');
  * @returns {Array} a new array with the reduceped items
  */
 const reduce = (arr = [], callback = () => {}, initialValue) => {
-  let accumulator = initialValue !== undefined ? initialValue : arr[0];
+if (arr.length == 0 && initialValue === undefined) {
+  throw new TypeError("reduce of empty array with no initial value"); 
+}
 
-  for (const entry of arr) {
-    accumulator = callback(accumulator, entry);
+  let accumulator = initialValue !== undefined ? initialValue : arr[0];
+  let startIndex = initialValue !== undefined ? 0 : 1; 
+
+  for (let i = startIndex ; i < arr.length ; i++) {
+    accumulator = callback(accumulator, arr[i]); 
   }
+
+  // the following code isn't going to work
+  // for (const entry of arr) {
+  //   accumulator = callback(accumulator, entry);
+  // } 
 
   return accumulator;
 };
