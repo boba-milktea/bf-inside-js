@@ -1,7 +1,3 @@
-// #todo
-
-debugger;
-
 export const reverse = (text = '') => {
   let backwards = '';
   for (const char of text) {

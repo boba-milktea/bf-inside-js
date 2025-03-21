@@ -3,12 +3,16 @@
 'use strict';
 
 /**
- * ___
- * @param {string} [text=''] - ___
- * @param {number} [repeats=_] - ___
- * @returns {string} ___
+ * to repeat strings
+ * @param {string} [text=''] - text to be repeated
+ * @param {number} [repeats=0] - the time to repeat
+ * @returns {string} the repeated text
  */
-__;
+
+const repeat = (text="", repeats=1) => {
+  
+  return text = repeats = 0 ? "" : text.repeat(repeats); 
+} 
 
 describe('repeater: repeats a string a specific number of times', () => {
   it('can repeat a string once', () => {
@@ -21,7 +25,7 @@ describe('repeater: repeats a string a specific number of times', () => {
   });
   it('repeating the empty string is still empty', () => {
     const actual = repeat('', 12);
-    expect(actual).toEqual('PpPpPpPp');
+    expect(actual).toEqual('');
   });
   it('repeating anything 0 times is the empty string', () => {
     const actual = repeat('hoy!', 0);

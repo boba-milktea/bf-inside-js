@@ -17,7 +17,7 @@ const countCharacter = (text = '', toCount = '') => {
 
   count++;
   for (let character of text) {
-    count = character = toCount ? count : count + 1;
+    count = character !== toCount ? count : count + 1;
   }
   return count;
 };

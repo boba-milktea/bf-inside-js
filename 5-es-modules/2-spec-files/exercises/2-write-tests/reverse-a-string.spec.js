@@ -1,5 +1,3 @@
-// #todo
-
 import { reverseAString } from './reverse-a-string.js';
 
 describe('it should reverseAString strings', () => {
@@ -10,17 +8,36 @@ describe('it should reverseAString strings', () => {
   });
   describe('when argument is a string', () => {
     it('the empty string should return an empty string', () => {
-      expect(reverseAString('')).toEqual(_);
+      expect(reverseAString('')).toEqual('');
     });
     it('"toads" should return "sdaot"', () => {
-      expect(reverseAString(_)).toEqual('sdaot');
+      expect(reverseAString("toads")).toEqual('sdaot');
     });
-    // write at least 5 more tests
+    it('"hello" should return "olleh"', () => {
+      expect(reverseAString("hello")).toEqual('olleh');
+    });
+    it('"world" should return "dlrow"', () => {
+      expect(reverseAString("world")).toEqual('dlrow');
+    });
+    it('"JavaScript" should return "tpircSavaJ"', () => {
+      expect(reverseAString("JavaScript")).toEqual('tpircSavaJ');
+    });
+    it('"racecar" should return "racecar"', () => {
+      expect(reverseAString("racecar")).toEqual('racecar');
+    });
   });
   describe('when argument is not a string', () => {
     it('true should return "text is not a string"', () => {
-      expect(reverseAString(true)).toEqual(_);
+      expect(reverseAString(true)).toEqual('text is not a string');
     });
-    // write at least 3 more tests
+    it('42 should return "text is not a string"', () => {
+      expect(reverseAString(42)).toEqual('text is not a string');
+    });
+    it('null should return "text is not a string"', () => {
+      expect(reverseAString(null)).toEqual('text is not a string');
+    });
+    it('an object should return "text is not a string"', () => {
+      expect(reverseAString({ key: "value" })).toEqual('text is not a string');
+    });
   });
 });
