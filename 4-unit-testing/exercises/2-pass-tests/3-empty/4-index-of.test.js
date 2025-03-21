@@ -12,7 +12,12 @@
  *  If toFind is not 1 character, the search returns -1.
  * @returns {number} The index of the found character or -1.
  */
-__;
+const indexOf = (toSearch="", toFind="") => {
+  if(toFind.length !== 1 ) {
+    return -1; 
+  }
+  return toSearch.includes(toFind) ? toSearch.indexOf(toFind) : -1; 
+};
 
 describe('indexOf: finds the index of a character in a string', () => {
   describe('successful searches', () => {

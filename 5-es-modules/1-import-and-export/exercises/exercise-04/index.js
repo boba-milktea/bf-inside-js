@@ -1,7 +1,3 @@
-// #todo
-
-debugger;
-
 import { sayHi } from './say-hi.js';
 
 const greeting = sayHi('robin');
